@@ -1,0 +1,24 @@
+@mixin responsiveHeader($breakPoint) {
+  @if ($breakPoint == "laptop") {
+    @media (max-width: 769px) {
+      @content;
+    }
+  }
+
+  @if ($breakPoint == "x-lg") {
+    @media (max-width: 1025px) {
+      @content;
+    }
+  }
+
+  @if ($breakPoint == "medium") {
+    @media (max-width: 481px) {
+      @content;
+    }
+  }
+  @if ($breakPoint == "small") {
+    @media (max-width: 320px) {
+      @content;
+    }
+  }
+}

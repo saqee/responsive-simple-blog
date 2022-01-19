@@ -1,0 +1,168 @@
+<!--
+   Use Flex-box and Grid.
+   PS: keep your styling simple and don't spend too much time figuring out what colors, fonts etc-->
+
+<!-- please install sass globally by running this command
+   npm install -g sass  "sass:watch": "sass --watch style.scss:style.css"
+
+  
+
+   then run this in your terminal: sass:watch or npm run sass:watch
+   now you can type in style.scss and it will compile it automatically to style.css-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="menu_icon">
+    <i class="fa fa-bars"></i>
+  </div>
+  <div class="container">
+    <header class="header">
+
+      <div><span class="logo">$Logo~~$</span></div>
+      <nav>
+        <ul class="nav" id="nav">
+          <li class="nav_item">Home</li>
+          <li class="nav_item">About</li>
+          <li class="nav_item">Blog</li>
+          <li class="nav_item">Chat</li>
+          <li class="nav_item">Conatct Us</li>
+        </ul>
+      </nav>
+
+    </header>
+  </div>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col_one">
+          <div class="text">
+            <h3>Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima porro sequi maiores maxime modi culpa
+              tenetur eum animi amet officiis.</p>
+          </div>
+          <div class="image">
+            <img src="assets/images/img-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="line"></div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col_two">
+          <div class="box1">
+            <div class="title">
+              Lorem ipsum dolor sit amet.
+            </div>
+
+            <div class="body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima facere ipsam fugit sequi.
+            </div>
+            <button>Submit</button>
+          </div>
+          <div class="box1">
+            <div class="title">
+              Lorem ipsum dolor sit amet.
+            </div>
+
+            <div class="body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima facere ipsam fugit sequi.
+            </div>
+            <button>Submit</button>
+          </div>
+          <div class="box1">
+            <div class="title">
+              Lorem ipsum dolor sit amet.
+            </div>
+
+            <div class="body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima facere ipsam fugit sequi.
+            </div>
+            <button>Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="line"></div>
+    </div>
+
+    <div class="container">
+      <div class="service">
+        <h3 class="partner">Our Partners --></h3>
+        <button class="button-63" role="button">Microsoft</button>
+        <button class="button-63" role="button">Google</button>
+        <button class="button-63" role="button">FaceBook</button>
+        <button class="button-63" role="button">Integrify</button>
+        <button class="button-63" role="button">Tesla</button>
+        <button class="button-63" role="button">Zoomla</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="container">
+    <div class="line"></div>
+  </div>
+
+  <div class="container">
+    <div class="form">
+      <h3>Contact Form</h3>
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <div class="btn-resize">
+          <input type="submit" value="Submit">
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p class="copyright">All right reserved to &copy; Saqeeb Ahmed</p>
+  </footer>
+
+  <script>
+    const menu = document.querySelector('.menu_icon')
+    const nav = document.getElementById('nav')
+    const nav1 = document.querySelectorAll('.nav')
+    menu.addEventListener('click', () => {
+      console.log(nav1);
+      if (nav.className == 'nav') {
+        nav.className += " responsive"
+      } else {
+        nav.className = "nav"
+      }
+    })
+  </script>
+</body>
+
+</html>
